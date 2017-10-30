@@ -5,12 +5,12 @@ var orm = require('../config/orm.js');
 
 var burgerData = {
 	selectAll: function(cb) {
-		orm.slectAll("burgers", function(res) {
+		orm.selectAll("burgers", function(res) {
 			cb(res);
 		});
 	},
 
-	create: function(col, vals, cb) {
+	create: function(cols, vals, cb) {
 		orm.create("burgers", cols, vals, function(res) {
 			cb(res);
 		});

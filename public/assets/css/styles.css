@@ -1,0 +1,7 @@
+body {
+	background-color: orange;
+}
+
+#add, #title, #eaten, #uneaten {
+	text-align: center;
+}
